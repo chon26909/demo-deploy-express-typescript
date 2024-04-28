@@ -10,7 +10,7 @@ RUN npm install
 RUN npm run build
 
 ENV NODE_ENV=dev
-COPY .env .
+COPY .env.dev .
 
 EXPOSE 4000
 
