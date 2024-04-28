@@ -1,0 +1,13 @@
+services:
+  api:
+    image: chon26909/demo-express:latest
+    container_name: demo-express
+    ports:
+      - 4000:4000
+    expose:
+      - 4000
+    restart: always
+
+networks:
+  default:
+    name: app
